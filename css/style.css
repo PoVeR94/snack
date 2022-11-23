@@ -1,0 +1,293 @@
+*{
+    box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #E1C699;
+    border-left: 1px solid #532008;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #B5926D; 
+    border: 1px solid #532008;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #532008; 
+    border: 1px solid #B5926D;
+}
+
+body{
+    margin: 0;
+    background-image: url("../photos/background1080p.jpg");
+    background-attachment: fixed;
+}
+
+h1, h2, h3{
+    font-family: 'Dancing Script', cursive;
+}
+
+p, label, small, select, input, textarea{
+    font-family: 'Merriweather', serif;
+}
+
+b{
+    font-size: 18px;
+}
+
+.header{
+    text-align: center;
+    padding: 0;
+    background: black;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.header>a{
+    display: flex;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    color: white;
+    text-decoration: none;
+}
+
+.header>a:hover{
+    background-color:lightgrey;
+    color:black;
+    transition: all .5s;
+}
+
+.header span{
+    font-size: 44px;
+}
+
+.lang{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.flags{
+    margin-right: 1rem;
+    margin-top: 0.4rem;
+}
+
+h1{
+    margin: 0px;
+}
+h1>a{
+    color: white;
+    text-decoration: none;
+}
+
+h1>a:hover{
+    background-color:lightgrey;
+    color:black;
+    transition: all .5s;
+}
+
+.selector{
+    margin:0px;
+    background-color: #E1C699;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.selector>a{
+    border-left: 2px solid #B5926D;
+    padding: 5px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 160px;
+    height: 64px;
+}
+
+.selector>a:last-child{
+    border-right: 2px solid #B5926D;
+}
+
+.selector>a:nth-child(2){
+    margin-right: 150px;
+    border-right: 2px solid #B5926D;
+}
+
+.selector>a:hover{
+    background-color: #deb773;
+    transition: all .5s;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+}
+
+.corpus{
+    margin: 150px 25% 0px 25%;
+    padding-top: 1rem;
+    text-align: center;
+    background-color: hsla(0, 0%, 100%, 0.708);;
+    border-radius: 2%;
+}
+
+#command_button{
+    background-color: #E1C699;
+    border: 1px solid black;
+}
+
+#command_button:hover{
+    background-color: #deb773;
+}
+
+.ad #perfall{
+    position: fixed;
+    top: 20%;
+    right: 80%;
+}
+
+.ad #ldlp{
+    position: fixed;
+    top: 20%;
+    left: 80%;
+}
+
+.corpus p{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: left;
+}
+
+select{
+    text-align: right;
+    height: 21px;
+}
+
+.corpus #inside{
+    width: 100%;
+    text-align: left;
+}
+
+h2{
+    font-size: 28px;
+}
+
+#actus{
+    margin-top: 0;
+}
+
+.container{
+    display: flex;
+    border-top: 0.1rem solid #B5926D;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.container>img{
+    width: 250px;
+}
+
+.container>p{
+    font-size: 16px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: left;
+}
+
+#thnx{
+    text-align: center;
+}
+
+.sujets{
+    margin-top: 1rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#king{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person{
+    padding-top: 1rem;
+    width: 200px;
+    background-color: #E1C699;
+    border-radius: 5%;
+    border: 0.1rem solid #B5926D;
+}
+
+.description{
+    text-align: center !important;
+    padding: 0 1rem 0 1rem !important;
+}
+
+#obligatory{
+    text-align: center;
+    padding-bottom: 1.83rem;
+    margin-bottom: 8.6rem;
+}
+
+#eng_obligatory{
+    text-align: center;
+    padding-bottom: 1.83rem;
+    margin-bottom: 9.7rem;
+}
+
+#directions{
+    padding-bottom: 1.7rem;
+}
+
+.footer{
+    background-color: #532008;
+    color: white;
+    text-align: center;
+}
+
+.footer>h2{
+    padding-top: 1rem;
+    margin-bottom: 0;
+}
+
+.footer>p{
+    position: absolute;
+    text-align: left;
+    margin-left: 2.5rem;
+}
+
+.contact_us{
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+}
+
+.contact>span{
+    text-align: center;
+    width: 44px;
+    height: 20px;
+}
