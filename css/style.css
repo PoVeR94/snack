@@ -336,7 +336,7 @@ h2{
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-  
+    position: relative;
   }
   
   .gallery__item--2, .gallery__item--8, .gallery__item--15, .gallery__item--23, .gallery__item--26 {
@@ -344,7 +344,7 @@ h2{
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
-  
+    position: relative;
   }
   
   .gallery__item--3, .gallery__item--9, .gallery__item--16, .gallery__item--24, .gallery__item--27 {
@@ -352,7 +352,7 @@ h2{
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 3;
-  
+    position: relative;
   }
   
   .gallery__item--4, .gallery__item--10, .gallery__item--17, .gallery__item--28 {
@@ -360,7 +360,7 @@ h2{
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 3;
-  
+    position: relative;
   }
   
   .gallery__item--5, .gallery__item--11, .gallery__item--18 {
@@ -368,7 +368,7 @@ h2{
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
-  
+    position: relative;
   }
   
   .gallery__item--6, .gallery__item--12, .gallery__item--19 {
@@ -376,7 +376,7 @@ h2{
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 5;
-  
+    position: relative;
   }
 
   .gallery__item--13, .gallery__item--20 {
@@ -384,7 +384,7 @@ h2{
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 5;
-  
+    position: relative;
   }
 
   .gallery__item--21 {
@@ -392,5 +392,35 @@ h2{
     grid-column-end: 9;
     grid-row-start: 3;
     grid-row-end: 5;
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #E1C699;
+  }
   
+  .gallery__item:hover .overlay {
+    opacity: 0.8;
+  }
+  
+  .text {
+    color: black;
+    opacity: 1;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
