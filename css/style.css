@@ -303,6 +303,11 @@ h2{
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 5vw);
     grid-gap: 1.5rem; 
+    margin-bottom: 3rem;
+  }
+
+  .gallery_one_row:last-child{
+    margin-bottom: 0;
   }
 
   .gallery_one_row{
@@ -310,6 +315,7 @@ h2{
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 5vw);
     grid-gap: 1.5rem; 
+    margin-bottom: 3rem;
   }
   
   .gallery__item{
@@ -325,7 +331,7 @@ h2{
     display: block; 
   }
   
-  .gallery__item--1, .gallery__item--7, .gallery__item--14, .gallery__item--22 {
+  .gallery__item--1, .gallery__item--7, .gallery__item--14, .gallery__item--22, .gallery__item--25 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -333,7 +339,7 @@ h2{
   
   }
   
-  .gallery__item--2, .gallery__item--8, .gallery__item--15, .gallery__item--23 {
+  .gallery__item--2, .gallery__item--8, .gallery__item--15, .gallery__item--23, .gallery__item--26 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -341,7 +347,7 @@ h2{
   
   }
   
-  .gallery__item--3, .gallery__item--9, .gallery__item--16, .gallery__item--24 {
+  .gallery__item--3, .gallery__item--9, .gallery__item--16, .gallery__item--24, .gallery__item--27 {
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 1;
@@ -349,7 +355,7 @@ h2{
   
   }
   
-  .gallery__item--4, .gallery__item--10, .gallery__item--17 {
+  .gallery__item--4, .gallery__item--10, .gallery__item--17, .gallery__item--28 {
     grid-column-start: 7;
     grid-column-end: 9;
     grid-row-start: 1;
