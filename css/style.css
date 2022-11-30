@@ -301,7 +301,14 @@ h2{
   .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
+    grid-template-rows: repeat(4, 5vw);
+    grid-gap: 1.5rem; 
+  }
+
+  .gallery_one_row{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 5vw);
     grid-gap: 1.5rem; 
   }
   
@@ -318,7 +325,7 @@ h2{
     display: block; 
   }
   
-  .gallery__item--1 {
+  .gallery__item--1, .gallery__item--7, .gallery__item--14, .gallery__item--22 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -326,7 +333,7 @@ h2{
   
   }
   
-  .gallery__item--2 {
+  .gallery__item--2, .gallery__item--8, .gallery__item--15, .gallery__item--23 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -334,34 +341,50 @@ h2{
   
   }
   
-  .gallery__item--3 {
+  .gallery__item--3, .gallery__item--9, .gallery__item--16, .gallery__item--24 {
     grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  
+  }
+  
+  .gallery__item--4, .gallery__item--10, .gallery__item--17 {
+    grid-column-start: 7;
     grid-column-end: 9;
     grid-row-start: 1;
-    grid-row-end: 6;
+    grid-row-end: 3;
   
   }
   
-  .gallery__item--4 {
+  .gallery__item--5, .gallery__item--11, .gallery__item--18 {
     grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  
+  }
+  
+  .gallery__item--6, .gallery__item--12, .gallery__item--19 {
+    grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row-end: 5;
   
   }
-  
-  .gallery__item--5 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 9;
-  
-  }
-  
-  .gallery__item--6 {
+
+  .gallery__item--13, .gallery__item--20 {
     grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  
+  }
+
+  .gallery__item--21 {
+    grid-column-start: 7;
     grid-column-end: 9;
-    grid-row-start: 6;
-    grid-row-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 5;
   
   }
