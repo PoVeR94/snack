@@ -159,14 +159,14 @@ h1>a:hover{
 }
 
 .ad #perfall{
-    position: fixed;
-    top: 20%;
+    position: absolute;
+    top: 40%;
     right: 85%;
 }
 
 .ad #ldlp{
-    position: fixed;
-    top: 20%;
+    position: absolute;
+    top: 40%;
     left: 85%;
 }
 
