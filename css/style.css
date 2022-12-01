@@ -270,9 +270,15 @@ h2{
     text-align: center;
 }
 
-.footer>h2{
+.footer h2{
     padding-top: 1rem;
     margin-bottom: 0;
+}
+
+.mdi{
+    font-size: 21px;
+    padding-top: 0.3rem;
+    padding-right: 0.5rem;
 }
 
 .footer>p{
@@ -291,6 +297,17 @@ h2{
 .contact{
     display: flex;
     align-items: center;
+}
+
+.insta{
+    text-decoration: none;
+    color:white;
+}
+
+.insta:hover{
+        text-decoration: none;
+        color:#B5926D;
+        transition: .5s ease;
 }
 
 .contact>span{
@@ -328,17 +345,20 @@ h2{
   .gallery__item{
     margin: 0;
     padding: 0;
-    box-sizing: inherit; 
+    box-sizing: inherit;
+    border-radius: 5%;
   }
 
   .gallery__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block; 
+    display: block;
+    border-radius: 5%;
+    box-shadow: 1.9px 3.8px 3.8px hsl(0deg 0% 0% / 0.44);
   }
   
-  .gallery__item--1, .gallery__item--7, .gallery__item--14, .gallery__item--22, .gallery__item--25 {
+  .gallery__item--1, .gallery__item--7, .gallery__item--14, .gallery__item--22, .gallery__item--25, .gallery__item--29 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -346,7 +366,7 @@ h2{
     position: relative;
   }
   
-  .gallery__item--2, .gallery__item--8, .gallery__item--15, .gallery__item--23, .gallery__item--26 {
+  .gallery__item--2, .gallery__item--8, .gallery__item--15, .gallery__item--23, .gallery__item--26, .gallery__item--30 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -354,7 +374,7 @@ h2{
     position: relative;
   }
   
-  .gallery__item--3, .gallery__item--9, .gallery__item--16, .gallery__item--24, .gallery__item--27 {
+  .gallery__item--3, .gallery__item--9, .gallery__item--16, .gallery__item--24, .gallery__item--27, .gallery__item--31 {
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 1;
@@ -362,7 +382,7 @@ h2{
     position: relative;
   }
   
-  .gallery__item--4, .gallery__item--10, .gallery__item--17, .gallery__item--28 {
+  .gallery__item--4, .gallery__item--10, .gallery__item--17, .gallery__item--28, .gallery__item--32 {
     grid-column-start: 7;
     grid-column-end: 9;
     grid-row-start: 1;
@@ -370,7 +390,7 @@ h2{
     position: relative;
   }
   
-  .gallery__item--5, .gallery__item--11, .gallery__item--18 {
+  .gallery__item--5, .gallery__item--11, .gallery__item--18, .gallery__item--33 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -378,7 +398,7 @@ h2{
     position: relative;
   }
   
-  .gallery__item--6, .gallery__item--12, .gallery__item--19 {
+  .gallery__item--6, .gallery__item--12, .gallery__item--19, .gallery__item--34 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 3;
@@ -386,7 +406,7 @@ h2{
     position: relative;
   }
 
-  .gallery__item--13, .gallery__item--20 {
+  .gallery__item--13, .gallery__item--20, .gallery__item--35 {
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 3;
@@ -394,11 +414,43 @@ h2{
     position: relative;
   }
 
-  .gallery__item--21 {
+  .gallery__item--21, .gallery__item--36 {
     grid-column-start: 7;
     grid-column-end: 9;
     grid-row-start: 3;
     grid-row-end: 5;
+    position: relative;
+  }
+
+  .gallery__item--37 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    position: relative;
+  }
+
+  .gallery__item--38 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    position: relative;
+  }
+
+  .gallery__item--39 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    position: relative;
+  }
+
+  .gallery__item--40 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 7;
     position: relative;
   }
 
@@ -411,6 +463,7 @@ h2{
     height: 100%;
     width: 100%;
     opacity: 0;
+    border-radius: 5%;
     transition: .5s ease;
     background-color: #E1C699;
   }
@@ -430,4 +483,19 @@ h2{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+.avis{
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 958px;
+}
+
+  .gallery_trustpilot {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 5vw);
+    grid-gap: 1.5rem;
+    padding-bottom: 1.83rem;
   }
