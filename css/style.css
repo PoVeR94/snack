@@ -35,6 +35,10 @@ h1, h2, h3{
     font-family: 'Dancing Script', cursive;
 }
 
+h3{
+    font-size: 22px;
+}
+
 p, label, small, select, input, textarea{
     font-family: 'Merriweather', serif;
 }
