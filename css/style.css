@@ -485,6 +485,44 @@ h2{
     text-align: center;
   }
 
+.pop-up_news{
+    left: 100%;
+    top: 20%;
+    position: fixed;
+    background-color: hsla(0, 0%, 100%, 0.708);;
+    border-radius: 2%;
+    transform: translateX(-100%);
+    transition: transform 2s;
+    transition-delay: 5s;
+}
+
+.pop-up_news h2{
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
+#pop-up_container{
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+.pop-up_news img{
+    width: 125px;
+    height: 90px;
+}
+
+.pop-up_news p{
+    font-size: 10px;
+    padding-left: 1rem;
+    padding-right: 0;
+    width: 160px;
+}
+
+.pop-up_news a{
+    text-decoration: none;
+    color: black;
+}
+
 .avis{
     margin-top: 1rem;
     margin-left: auto;
