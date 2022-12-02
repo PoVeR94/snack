@@ -528,6 +528,7 @@ select{
     padding-left: 1rem;
     padding-right: 0;
     width: 100px;
+    margin-top: 0;
   }
 
   .pop-up_news a{
